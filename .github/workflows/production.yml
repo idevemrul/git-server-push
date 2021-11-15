@@ -1,7 +1,7 @@
 on: 
   push:
     branches:
-      - development
+      - production
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -17,4 +17,4 @@ jobs:
         server: ftp.surmabangladeshgroup.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        # server-dir: /development.surmabangladeshgroup.com/
+        server-dir: /public_html/production/
